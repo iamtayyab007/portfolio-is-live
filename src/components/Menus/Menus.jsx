@@ -18,9 +18,7 @@ export default function Menus({ isSideMenu }) {
       {isSideMenu ? (
         <>
           <div className="navbar-profile-pic">
-            <Rotate>
-              <img src={profileImage} alt="profile pic" />
-            </Rotate>
+            <img src={profileImage} alt="profile pic" />
           </div>
           <div className="nav-items">
             <div className="nav-item">
