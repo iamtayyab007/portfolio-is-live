@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="container home-content">
           <h2>Hi 👋 I'm a</h2>
-          <h1></h1>
+          <h1>Mern Stack Developer</h1>
 
           <div className="home-buttons">
             <a
