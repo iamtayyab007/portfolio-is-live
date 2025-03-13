@@ -5,7 +5,7 @@ import Projects from "./pages/Projects/Projects";
 import Education from "./pages/Educations/Education";
 import WorkExp from "./pages/WorkExp/WorkExp";
 import Contact from "./pages/Contact/Contact";
-import ScrollToTop from "react-scroll-to-top";
+
 import { useTheme } from "./context/context";
 import Tada from "react-reveal/Tada";
 import "./App.css";
@@ -35,12 +35,6 @@ function App() {
           </Tada>
         </div>
       </div>
-
-      <ScrollToTop
-        smooth
-        color="#f29f67"
-        style={{ backgroundColor: "#1e1e2c", borderRadius: "80px" }}
-      />
     </>
   );
 }
