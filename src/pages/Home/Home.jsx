@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../../context/context";
 import "./home.css";
-import Typewriter from "typewriter-effect";
+
 import MyResume from "../../assets/Docs/resume.txt";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
@@ -24,15 +24,7 @@ export default function Home() {
         </div>
         <div className="container home-content">
           <h2>Hi 👋 I'm a</h2>
-          <h1>
-            <Typewriter
-              options={{
-                strings: ["Mern stack Developer!"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h1>
+          <h1></h1>
 
           <div className="home-buttons">
             <a
