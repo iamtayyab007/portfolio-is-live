@@ -1,16 +1,14 @@
 import React from "react";
 import "./About.css";
 import profileImage from "../../assets/images/profile.jpg";
-import Roll from "react-reveal/Roll";
+
 export default function About() {
   return (
     <>
       <div className="about" id="about">
         <div className="row">
           <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
-            <Roll>
-              <img src={profileImage} alt="profile_pic" />
-            </Roll>
+            <img src={profileImage} alt="profile_pic" />
           </div>
           <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
             <h1>About Me</h1>

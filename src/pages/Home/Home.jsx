@@ -4,7 +4,7 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 import MyResume from "../../assets/Docs/resume.txt";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import Zoom from "react-reveal/Zoom";
+
 export default function Home() {
   const { theme, setTheme } = useTheme();
 
@@ -23,18 +23,17 @@ export default function Home() {
           )}
         </div>
         <div className="container home-content">
-          <Zoom>
-            <h2>Hi 👋 I'm a</h2>
-            <h1>
-              <Typewriter
-                options={{
-                  strings: ["Mern stack Developer!"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
-          </Zoom>
+          <h2>Hi 👋 I'm a</h2>
+          <h1>
+            <Typewriter
+              options={{
+                strings: ["Mern stack Developer!"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h1>
+
           <div className="home-buttons">
             <a
               className="btn btn-hire"
