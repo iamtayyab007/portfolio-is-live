@@ -11,7 +11,6 @@ import {
   FcReadingEbook,
   FcVideoProjector,
 } from "react-icons/fc";
-import Rotate from "react-reveal/Rotate";
 
 export default function Menus({ isSideMenu }) {
   return (

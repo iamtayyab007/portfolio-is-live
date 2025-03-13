@@ -7,7 +7,7 @@ import WorkExp from "./pages/WorkExp/WorkExp";
 import Contact from "./pages/Contact/Contact";
 
 import { useTheme } from "./context/context";
-import Tada from "react-reveal/Tada";
+
 import "./App.css";
 import MobileNav from "./components/MobileNav/MobileNav";
 import { ToastContainer } from "react-toastify";
