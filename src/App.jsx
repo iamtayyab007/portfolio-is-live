@@ -30,9 +30,7 @@ function App() {
         </div>
 
         <div className="footer pb-3 ms-3">
-          <Tada>
-            <h4 className="text-center">My Portfolio Website &copy; 2025</h4>
-          </Tada>
+          <h4 className="text-center">My Portfolio Website &copy; 2025</h4>
         </div>
       </div>
     </>
