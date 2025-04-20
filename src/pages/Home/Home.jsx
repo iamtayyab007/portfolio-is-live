@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../../context/context";
 import "./home.css";
 
-import MyResume from "../../assets/Docs/resume.txt";
+import MyResume from "../../assets/Docs/resume.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 export default function Home() {
