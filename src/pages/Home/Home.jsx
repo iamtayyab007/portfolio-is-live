@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../../context/context";
 import "./home.css";
 
-import MyResume from "../../assets/Docs/resume.pdf";
+import MyResume from "../../../public/resume.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 export default function Home() {
@@ -10,33 +10,6 @@ export default function Home() {
 
   const handleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
-
-  const handleDownload = () => {
-    fetch("https://portfolio-is-live.vercel.app/" + MyResume, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/pdf",
-      },
-    })
-      .then((response) => response.blob())
-      .then((blob) => {
-        // Create blob link to download
-        const url = window.URL.createObjectURL(blob);
-
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", `resume.pdf`);
-
-        // Append to html link element page
-        document.body.appendChild(link);
-
-        // Start download
-        link.click();
-
-        // Clean up and remove the link
-        link.parentNode.removeChild(link);
-      });
   };
 
   return (
@@ -63,7 +36,7 @@ export default function Home() {
               Hire me
             </a>
 
-            <a className="btn btn-cv" href={MyResume} onClick={handleDownload}>
+            <a className="btn btn-cv" href={MyResume} download="resume.pdf">
               My Resume
             </a>
           </div>
