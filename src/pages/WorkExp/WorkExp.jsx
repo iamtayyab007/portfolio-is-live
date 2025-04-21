@@ -21,14 +21,14 @@ export default function WorkExp() {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "orangered", color: "black" }}
+            contentStyle={{ background: "silver", color: "black" }}
             contentArrowStyle={{ borderRight: "orangered" }}
             date="1+ year Experience"
             iconStyle={{ background: "rgb(33, 37, 243)", color: "#fff" }}
             icon={<SiReact />}
           >
             <h3 className="vertical-timeline-element-title">
-              Mern Stack Developer
+              Mern Stack Developer (ReactJS/NextJS/Typescript)
             </h3>
           </VerticalTimelineElement>
         </VerticalTimeline>

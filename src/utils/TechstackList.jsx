@@ -13,6 +13,7 @@ import {
   SiWordpress,
   SiExpress,
   SiMui,
+  SiNextdotjs,
 } from "react-icons/si";
 export const TechstackList = [
   {
@@ -46,7 +47,11 @@ export const TechstackList = [
     name: "React JS",
     icon: SiReact,
   },
-
+  {
+    _id: 8,
+    name: "NEXT JS",
+    icon: SiNextdotjs,
+  },
   {
     _id: 9,
     name: "React MUI",
