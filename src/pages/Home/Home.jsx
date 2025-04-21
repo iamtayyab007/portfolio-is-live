@@ -12,6 +12,33 @@ export default function Home() {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
+  const handleDownload = () => {
+    fetch("https://portfolio-is-live.vercel.app/" + MyResume, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/pdf",
+      },
+    })
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Create blob link to download
+        const url = window.URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", `resume.pdf`);
+
+        // Append to html link element page
+        document.body.appendChild(link);
+
+        // Start download
+        link.click();
+
+        // Clean up and remove the link
+        link.parentNode.removeChild(link);
+      });
+  };
+
   return (
     <>
       <div className="container-fluid home-container" id="home">
@@ -36,7 +63,7 @@ export default function Home() {
               Hire me
             </a>
 
-            <a className="btn btn-cv" href={MyResume} download="resume.pdf">
+            <a className="btn btn-cv" href={MyResume} onClick={handleDownload}>
               My Resume
             </a>
           </div>
